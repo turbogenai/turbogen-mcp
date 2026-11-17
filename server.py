@@ -62,7 +62,7 @@ def _out_dir() -> Path:
 
 
 def _client(auth: bool = True) -> httpx.AsyncClient:
-    headers = {"User-Agent": f"{BRAND.lower()}-mcp/0.1.4"}
+    headers = {"User-Agent": f"{BRAND.lower()}-mcp/0.1.5"}
     if auth:
         headers["Authorization"] = f"Bearer {_key()}"
     return httpx.AsyncClient(base_url=_base(), headers=headers, timeout=httpx.Timeout(120, connect=15),

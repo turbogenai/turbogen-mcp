@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "turbogen-mcp"
-version = "0.1.4"
+version = "0.1.5"
 description = "MCP server for Turbogen: Seedance, Kling, Veo, Nano Banana Pro and more - images, video and audio, pay-as-you-go"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -27,6 +27,8 @@ dependencies = [
 Homepage = "https://turbogen.app"
 Documentation = "https://turbogen.app/api-docs#mcp"
 Pricing = "https://turbogen.app/pricing"
+Repository = "https://github.com/turbogenai/turbogen-mcp"
+Issues = "https://github.com/turbogenai/turbogen-mcp/issues"
 
 [project.scripts]
 turbogen-mcp = "server:main"
